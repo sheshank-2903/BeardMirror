@@ -1,8 +1,8 @@
 {
-  "name": "smart-hair-mirror",
+  "name": "linkedin-job-search-agent",
   "version": "0.1.0",
   "private": true,
-  "description": "AI Smart Hair & Beard Mirror MVP",
+  "description": "Browser-only LinkedIn job search application assistant",
   "main": "dist-electron/main.js",
   "type": "module",
   "scripts": {

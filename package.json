@@ -1,13 +1,12 @@
 {
-  "name": "smart-hair-mirror",
+  "name": "linkedin-job-search-agent",
   "version": "0.1.0",
   "private": true,
-  "description": "AI Smart Hair & Beard Mirror MVP",
-  "main": "dist-electron/main.js",
+  "description": "Browser-only LinkedIn job search application assistant",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k \"vite\" \"wait-on tcp:5173 && electron .\"",
-    "build": "tsc -b && vite build && tsc -p electron/tsconfig.json",
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest run",

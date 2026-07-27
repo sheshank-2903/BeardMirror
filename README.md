@@ -1,14 +1,17 @@
-# AI Smart Hair & Beard Mirror (Phase 1 MVP)
+# LinkedIn Job Search Automation Agent
 
-Electron + React + TypeScript desktop MVP for realtime virtual hairstyle/beard try-on.
+A browser-only React + TypeScript assistant for organizing LinkedIn job searches. It helps you track roles, open LinkedIn job pages, draft application messages, copy those drafts, and mark each role as saved, ready, or applied.
 
-## Implemented in this milestone
+> This project intentionally keeps the final application action manual. It does not take control of another browser tab, scrape LinkedIn, or submit applications on your behalf.
 
-- Electron desktop shell with secure preload bridge
-- React renderer with mirrored webcam preview
-- Selectable hairstyle and beard overlays (3 each)
-- Zustand-based style state management
-- Modular folder structure for future MediaPipe/Three.js expansion
+## Features
+
+- Browser-only Vite React app
+- Job pipeline with saved, ready-to-apply, and applied states
+- Editable job details and LinkedIn posting URL
+- Cover-letter style draft generation from role and company fields
+- Clipboard copy action for pasting into LinkedIn application forms
+- Responsive dashboard layout
 
 ## Getting started
 
@@ -16,6 +19,8 @@ Electron + React + TypeScript desktop MVP for realtime virtual hairstyle/beard t
 npm install
 npm run dev
 ```
+
+Open the local Vite URL in your browser, then use **Open LinkedIn Jobs** to launch LinkedIn in another tab.
 
 ## Build
 
@@ -29,11 +34,3 @@ npm run build
 npm test
 npm run test:e2e
 ```
-
-## Next steps
-
-1. Integrate MediaPipe Face Landmarker and bind overlays to landmarks.
-2. Replace static overlay coordinates with landmark-driven transforms.
-3. Add screenshot save via Electron IPC.
-4. Add swipe/search UI and style categories.
-5. Add FPS/latency instrumentation and optimization pass.
